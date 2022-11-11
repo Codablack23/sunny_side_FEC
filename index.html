@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <nav class="nav">
+        <div class="brand">
+          <a href="/">
+            <img src="./images/logo.svg" alt="logo">
+          </a>
+          <button class="dropdown-btn">
+            <img src="./images/icon-hamburger.svg" alt="">
+          </button>
+        </div>
+        <div class="nav-links not-shown">
+          <a href="#" class="nav-link">About</a>
+          <a href="#" class="nav-link">Services</a>
+          <a href="#" class="nav-link">Projects</a>
+          <a href="#" class="nav-link contact-btn">Contact</a>
+        </div>
+      </nav>
+      <div class="hero-text container">
+        <h1 class="h-text">We are creatives</h1><br>
+        <img src="./images/icon-arrow-down.svg" alt="arrow-down">
+      </div>
+    </header>
+    <div class="grid">
+      <div class="centered-box">
+         <div class="box">
+          <h3 class="h-text">Transform your brand</h3>
+         <p>
+          We are a full-service creative agency specializing in helping brands grow fast. 
+          Engage your clients through compelling visuals that do most of the marketing for you.
+         </p>
+         <button class="learn-more">Learn more</button>
+         </div>
+      </div>
+      <div>
+        <img src="./images/desktop/image-transform.jpg" class="img-res" alt="">
+      </div>
+    </div>
+    <div class="grid">
+      <div>
+        <img src="./images/desktop/image-stand-out.jpg" class="img-res" alt="">
+      </div>
+      <div class="centered-box">
+         <div class="box">
+          <h3 class="h-text">Stand out to the right audience</h3>
+         <p>
+          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+         </p>
+         <button class="learn-more">Learn more</button>
+         </div>
+      </div>
+    </div>
+     <div class="grid">
+      <div class="grid-img-container">
+        <img src="./images/desktop/image-graphic-design.jpg" class="img-res" alt="">
+        <div class="text-container">
+          <div class="text">
+            <h4>Graphic design</h4>
+            <p>
+             Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+            </p>
+         </div>
+        </div>
+      </div>
+      <div class="grid-img-container">
+        <img src="./images/desktop/image-photography.jpg" class="img-res" alt="">
+        <div class="text-container">
+          <div class="text">
+            <h4>Photography</h4>
+            <p>
+              Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+            </p>
+         </div>
+        </div>
+      </div>
+    </div>
+    <section class="testimonials">
+      <h3>Client testimonials</h3>
+      <div class="content">
+
+       <div class="testimony">
+        <img src="./images/image-emily.jpg" alt="">
+        <p>
+          We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+        </p>
+        <div class="credit">
+          <h4>Emily R.</h4>
+          <p>Marketing Director</p>
+        </div>
+       </div>
+        <!--  -->
+       <div class="testimony">
+        <img src="./images/image-thomas.jpg" alt="">
+        <p> 
+          Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+        </p>
+        <div class="credit">
+          <h4>Thomas S.</h4>
+          <p>Chief Operating Officer</p>
+        </div>
+       </div>
+       <!--  -->
+       <div class="testimony">
+        <img src="./images/image-jennie.jpg" alt="">
+          <p>
+            Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+          </p>
+          <div class="credit">
+            <h4>Jennie F.</h4>
+            <p>Business Owner</p>
+          </div>
+       </div>
+
+      </div>
+    </section>
+    <section class="gallery">
+      <div>
+        <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="">
+      </div>
+      <div><img src="./images/desktop/image-gallery-orange.jpg" alt=""></div>
+      <div><img src="./images/desktop/image-gallery-cone.jpg" alt=""></div>
+      <div><img src="./images/desktop/image-gallery-sugarcubes.jpg" alt=""></div>      
+    </section>
+
+    <footer>
+      <img src="./images/logo.svg" alt="" width="180">
+      <nav class="footer-nav">
+        <p>About</p>
+        <p>Services</p>
+        <p>Projects</p>
+      </nav><br><br>
+      <nav class="social-links">
+        <p><img src="./images/icon-facebook.svg" alt=""></p>
+        <p><img src="./images/icon-instagram.svg" alt=""></p>
+        <p><img src="./images/icon-twitter.svg" alt=""></p>
+        <p><img src="./images/icon-pinterest.svg" alt=""></p>
+      </nav>
+    </footer>
+  </main>
+<script>
+  const btn = document.querySelector(".dropdown-btn")
+  const menu = document.querySelector(".nav-links")
+  const shown = document.querySelector(".shown")
+
+  btn.addEventListener("click",()=>{
+    menu.classList.toggle("not-shown")
+    menu.classList.toggle("shown")
+  })
+
+</script>
+<!--  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
